@@ -1,0 +1,20 @@
+Experimento: FL M4_3522 Asymmetric DQW sin polarizacion, potencias
+
+Temperatura = 21.0k
+Potencia= variable {0.5 .... 9.0}mW
+Temperatura = 21.0k
+Diametro= 
+Tiempo de Integracion = 3000ms
+Apertura Slits = 50um
+Fecuencia Retardador = N.A
+Promedios: 3 (mediciones)
+Orientacion: 0°
+GAIN: High Sensitivity
+ADC: 45kHz
+
+Laser= L780P010, a 20°C 785nm
+Monocromador Laser: Sin Monocromador
+
+Notas:
+Longitud de onda inicial: 794, 3 rangos 
+Offsets seran usados los potencias01 si no alcanza el tiempo.
