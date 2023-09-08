@@ -1,8 +1,8 @@
 import os 
 from pathlib import Path
 
-from HDF5Migrator import  HDF5Builder
-from criterias import criteria_name
+from hdf5migrator import Builder as HDF5Builder
+from hdf5migrator import criteria_name
 
 
 CurrentPath = os.path.abspath(__file__)

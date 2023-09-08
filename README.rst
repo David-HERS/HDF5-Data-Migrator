@@ -62,30 +62,30 @@ Which prints:
 
   >>>python ./examples/doc_built_tree.py
   [0]:2022-04-08/
-  [1]:├── potencias01/
-  │   [2]:├── 00_1mW/
-  │   │   [3]:├── M4_3522_T=21_0K__0_0V__0grados.dat
-  │   │   [3]:└── M4_3522_T=21_0K__Offset_0_0V__0grados.dat
-  │   [2]:├── 00_2mW/
-  │   │   [3]:├── M4_3522_T=21_0K__0_0V__0grados.dat
-  │   │   [3]:└── M4_3522_T=21_0K__Offset_0_0V__0grados.dat
-  │   [2]:├── 00_3mW/
-  │   │   [3]:├── M4_3522_T=21_0K__0_0V__0grados.dat
-  │   │   [3]:└── M4_3522_T=21_0K__Offset_0_0V__0grados.dat
-  │   [2]:├── 00_4mW/
-  │   │   [3]:├── M4_3522_T=21_0K__0_0V__0grados.dat
-  │   │   [3]:└── M4_3522_T=21_0K__Offset_0_0V__0grados.dat
+  [1]:├── powers/
   │   [2]:├── 00_5mW/
-  │   │   [3]:├── M4_3522_T=21_0K__0_0V__0grados.dat
-  │   │   [3]:└── M4_3522_T=21_0K__Offset_0_0V__0grados.dat
+  │   │   [3]:└── M4_3522_T=21_0K__0_0V__0grados.dat
   │   [2]:├── 01_0mW/
-  │   │   [3]:├── M4_3522_T=21_0K__0_0V__0grados.dat
-  │   │   [3]:└── M4_3522_T=21_0K__Offset_0_0V__0grados.dat
+  │   │   [3]:└── M4_3522_T=21_0K__0_0V__0grados.dat
   │   [2]:├── 01_5mW/
-  .
-  .
-  .
-  
+  │   │   [3]:└── M4_3522_T=21_0K__0_0V__0grados.dat
+  │   [2]:└── Bitacora.txt
+  [1]:├── spot/
+  [1]:└── temperaturas/
+      [2]:├── 100k/
+      │   [3]:├── 00_5mW/
+      │   [3]:├── 01_5mW/
+      │   [3]:└── 09_0mW/
+      [2]:├── 23k/
+      │   [3]:├── 00_5mW/
+      │   [3]:├── 01_5mW/
+      │   [3]:└── 09_0mW/
+      [2]:├── 50k/
+      │   [3]:├── 00_5mW/
+      │   [3]:├── 01_5mW/
+      │   [3]:└── 09_0mW/
+      [2]:└── Bitacora.txt
+
 When you are certain, proceed to create the HDF5 file. You can also use 
 the ``criteria_name`` function to filter the directories:
 
@@ -111,6 +111,14 @@ the ``criteria_name`` function to filter the directories:
                           criteria=user_criteria, depth= 4, name = h5Name, close = False)
    
    paths.h5_file.close()
+
+Which prints:
+
+.. code:: text
+
+  >>>python ./examples/doc_built_hdf5.py
+  Oops! Bitacora.txt isn't file for import in hdf5. ()
+  Oops! Bitacora.txt isn't file for import in hdf5. ()
 
 If you decide not to close the file, you can continue using it with the
 ``h5_file`` variable, or you can close the document and reopen 

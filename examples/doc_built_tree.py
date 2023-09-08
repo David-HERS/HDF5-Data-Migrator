@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
 
-from HDF5Migrator import  HDF5Builder
+from hdf5migrator import  Builder as HDF5Builder
 
 def user_criteria(path):
     return  not (path.name.endswith(".pdf") or 
