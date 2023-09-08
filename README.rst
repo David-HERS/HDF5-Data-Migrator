@@ -125,4 +125,4 @@ If you decide not to close the file, you can continue using it with the
 it using the ``h5py`` library.
 
 Try creating hdf5 files with the example 
-`doc_built_hdf5 <./examples/doc_built_hdf5.py>`
+`doc_built_hdf5 <https://github.com/David-HERS/HDF5-Data-Migrator/blob/main/examples/doc_built_hdf5.py>`_
